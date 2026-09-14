@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════
+   HEALWEAL 10X DESIGN SYSTEM — WORLD-CLASS CORPORATE TOKENS
+   ═══════════════════════════════════════════════════════ */
+:root {
+  /* Brand Palette */
+  --hw-primary:       #0B1220;   /* Deep corporate navy */
+  --hw-accent:        #214ECF;   /* Refined electric blue */
+  --hw-accent-hover:  #1A3EB0;   /* Darker hover blue */
+  --hw-white:         #FFFFFF;   /* Pure white */
+  --hw-surface-soft:  #F5F7FA;   /* Subtle modern grey/off-white */
+  --hw-surface-subtle:#FAFCFF;   /* High-key soft background */
+  --hw-text-primary:  #111827;   /* Deep slate heading text */
+  --hw-text-secondary:#667085;   /* Neutral slate body text */
+  --hw-text-tertiary: #98A2B3;   /* Muted captions */
+  --hw-teal:          #00B388;   /* Subtle status / micro indicator */
+  
+  /* Borders & Dividers */
+  --hw-border-hairline: rgba(15, 23, 42, 0.07);
+  --hw-border-subtle:   rgba(15, 23, 42, 0.12);
+  --hw-border-dark:     rgba(255, 255, 255, 0.10);
+
+  /* Apple/Linear style soft multi-layered shadows */
+  --hw-shadow-sm:  0 1px 2px rgba(11, 18, 32, 0.04);
+  --hw-shadow-md:  0 4px 20px -2px rgba(11, 18, 32, 0.05), 0 2px 6px -1px rgba(11, 18, 32, 0.03);
+  --hw-shadow-lg:  0 16px 40px -4px rgba(11, 18, 32, 0.08), 0 4px 12px -2px rgba(11, 18, 32, 0.02);
+  --hw-shadow-card: 0 1px 3px rgba(11, 18, 32, 0.04), 0 8px 24px rgba(11, 18, 32, 0.04);
+  --hw-shadow-card-hover: 0 16px 40px -4px rgba(33, 78, 207, 0.10), 0 6px 16px -2px rgba(11, 18, 32, 0.06);
+
+  /* Legacy tokens preserved for components */
+  --app-primary: rgba(33, 78, 207, 1);
+  --base-colorwhite: rgba(255, 255, 255, 1);
+  --basewhite: rgba(255, 255, 255, 1);
+  --blue-gray50: #F5F7FA;
+  --blue-gray700: #344054;
+  --gray-200: #E4E7EC;
+  --gray-300: #D0D5DD;
+  --gray-400: #98A2B3;
+  --gray-50: #F9FAFB;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-800: #1D2939;
+  --gray-900: #101828;
+  --indigo-700: #214ECF;
+  --primary-1: rgba(255, 255, 255, 1);
+  --shadow-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SHADCN BASE TOKENS (LIGHT DEFAULT)
+   ═══════════════════════════════════════════════════════ */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --muted: 210 20% 98%;
+    --muted-foreground: 215 16% 45%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --primary: 224 71% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 222 47% 11%;
+    --accent: 214 60% 97%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 224 71% 47%;
+    --radius: 0.75rem;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   GLOBAL RESETS & TYPOGRAPHY
+   ═══════════════════════════════════════════════════════ */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--hw-white);
+    color: var(--hw-text-primary);
+    font-family: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+    color: var(--hw-text-primary);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   PREMIUM UTILITIES
+   ═══════════════════════════════════════════════════════ */
+@layer components {
+  /* Apple/Linear inspired glassmorphic header */
+  .hw-glass-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  }
+
+  /* Dark glass for keynote moments */
+  .hw-glass-dark {
+    background: rgba(11, 18, 32, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Editorial Card */
+  .hw-card-editorial {
+    background: #FFFFFF;
+    border: 1px solid rgba(15, 23, 42, 0.07);
+    box-shadow: 0 1px 3px rgba(11, 18, 32, 0.03), 0 6px 20px rgba(11, 18, 32, 0.03);
+    border-radius: 1.25rem;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hw-card-editorial:hover {
+    transform: translateY(-4px);
+    border-color: rgba(33, 78, 207, 0.20);
+    box-shadow: 0 16px 40px -4px rgba(33, 78, 207, 0.09), 0 4px 16px -2px rgba(11, 18, 32, 0.04);
+  }
+
+  /* Pill Tag */
+  .hw-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.875rem;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background: #F5F7FA;
+    color: #0B1220;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  /* Primary Blue Button */
+  .hw-btn-primary {
+    background: #214ECF;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 9999px;
+    padding: 0.75rem 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 8px rgba(33, 78, 207, 0.25);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hw-btn-primary:hover {
+    background: #1A3EB0;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(33, 78, 207, 0.35);
+  }
+
+  /* Secondary Outline Button */
+  .hw-btn-secondary {
+    background: #FFFFFF;
+    color: #0B1220;
+    font-weight: 600;
+    border-radius: 9999px;
+    padding: 0.75rem 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(15, 23, 42, 0.14);
+    box-shadow: 0 1px 2px rgba(11, 18, 32, 0.04);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hw-btn-secondary:hover {
+    background: #F5F7FA;
+    border-color: rgba(15, 23, 42, 0.25);
+    transform: translateY(-1px);
+  }
+
+  /* Micro grid background */
+  .hw-bg-grid {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+  }
+
+  /* Dark grid background for keynote sections */
+  .hw-bg-grid-dark {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   SCROLLBAR & ACCESSIBILITY
+   ═══════════════════════════════════════════════════════ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F7FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

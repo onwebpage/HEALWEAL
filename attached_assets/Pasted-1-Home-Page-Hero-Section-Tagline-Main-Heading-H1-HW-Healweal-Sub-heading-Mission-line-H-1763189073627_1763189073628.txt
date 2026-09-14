@@ -1,0 +1,322 @@
+1. Home Page
+Hero Section
+
+Tagline / Main Heading (H1):
+HW = Healweal
+
+Sub-heading / Mission line:
+Health is Wealth & Wealth is Health!
+
+Short Mission Statement (1–2 lines):
+At Healweal Corp, we build innovative tech-driven platforms that empower people to live healthier and wealthier lives. Our ecosystem of brands is designed to transform everyday lifestyles through smart, scalable and impactful solutions.
+
+Short Intro About Parent Company
+
+Section Title:
+India’s Fastest Growing Tech Conglomerate
+
+Paragraph:
+Healweal Corp is India’s fastest growing tech conglomerate, focused on creating powerful technology platforms across health, wealth and digital experiences. With a growing portfolio of brands and businesses, we are committed to delivering real value, improving lives, and building a sustainable, future-ready organisation.
+
+Our Brands Snapshot
+
+(Show logos of Hapdax, Kepwe and HAt)
+
+Hapdax – All-in-one Health Platform
+
+Kepwe – All-in-one Wealth Platform
+
+HAt – All-in-one Internal & External Podcast Platform
+
+Under each logo you can add a small button:
+Button text: Explore More or Visit Brand
+
+Quick Links Strip (on home)
+
+You can keep a small bar or section:
+
+Media
+
+Careers
+
+Contact
+
+(These will scroll / link to respective pages.)
+
+2. About Us Page
+Company Overview
+
+Heading:
+About Healweal Corp
+
+Paragraph:
+Healweal Corp is India’s fastest growing tech conglomerate and the parent company of five subsidiaries: Hapdax, Sachna, Kepwe, Prosmer and HAt. We operate at the intersection of technology, health, wealth and digital media, building platforms and products that help individuals and businesses unlock their full potential.
+
+Another short line (optional):
+Our goal is to create a connected ecosystem where health, wealth and knowledge come together through innovative, user-centric solutions.
+
+Vision, Mission & Values
+
+Section Heading:
+Vision, Mission & Values
+
+Vision (sub-heading):
+VISION
+To build a 10 billion dollar diversified tech conglomerate by 2050.
+
+Mission (sub-heading):
+MISSION
+Building a world-class tech conglomerate with our portfolio of products, solutions, businesses and investments.
+
+Values (sub-heading):
+VALUES
+
+Integrity
+
+Honesty
+
+Transparency
+
+Respect
+
+Responsibility
+
+Courage
+
+(You can also format each value with a short one-liner later if client gives more detail.)
+
+Company Timeline / Milestones
+
+Section Heading:
+Our Journey
+
+List as timeline:
+
+August 2021 – Hapdax
+Launch of Hapdax, our all-in-one health platform.
+
+August 2023 – Kepwe
+Launch of Kepwe, our all-in-one wealth platform.
+
+August 2025 – HAt
+Launch of HAt, our all-in-one internal & external podcast platform.
+
+(If you want, design-wise you can show this as a vertical or horizontal timeline.)
+
+Leadership & Management
+
+Section Heading:
+Leadership & Management
+
+(Show photos + names + designations; content from client:)
+
+Founder & Chief Executive Officer (CEO) – Mr. Harshad Chavandke
+
+Chief Operating Officer (COO) – Mr. Tarun Ahir
+
+Chief Technology Officer (CTO) – Mr. Shlok Ranjan
+
+Chief Investment Officer (CIO) – Ms. Nikita Chavandke
+
+Chief Financial Officer (CFO) – Ms. Bhavna Mandani
+
+Chief Legal Officer (CLO) – Ms. Nandkumar Chavandke
+
+Chief People Officer (CPO) – [Name to be added]
+
+Chief Advisor Officer (CAO) – Ms. Komal Langote
+
+(“[Name to be added]” can be removed once they share the CPO name.)
+
+3. Our Brands Page
+
+Page Heading:
+Our Brands
+
+Intro Paragraph:
+Healweal Corp is home to a growing portfolio of tech-first brands. Each of our subsidiaries is focused on solving real-world problems and creating long-term value for individuals, professionals and businesses.
+
+Brand 1 – Hapdax
+
+Brand Name:
+Hapdax
+
+Tagline / Short Description:
+All-in-one Health Platform
+
+Description (2–3 lines):
+Hapdax is designed to create a world of healthy individuals. It brings together tools, resources and digital solutions that help people track, manage and improve their overall health and wellbeing in a simple, integrated way.
+
+Button text: Visit Website
+
+Brand 2 – Kepwe
+
+Brand Name:
+Kepwe
+
+Tagline / Short Description:
+All-in-one Wealth Platform
+
+Description (2–3 lines):
+Kepwe is built to create a world of wealthy individuals. The platform focuses on helping users manage, grow and protect their wealth through thoughtful, technology-driven solutions and smart financial tools.
+
+Button text: Visit Website
+
+Brand 3 – HAt
+
+Brand Name:
+HAt
+
+Tagline / Short Description:
+All-in-one Internal & External Podcast Platform
+
+Description (2–3 lines):
+HAt is a powerful internal and external podcast platform that enables organisations and creators to share stories, insights and knowledge with their audiences. It simplifies podcast creation, management and distribution for both teams and communities.
+
+Button text: Visit Website
+
+(If they later share details for Sachna and Prosmer, tu same pattern mein 1–2 paragraph add kar sakta hai.)
+
+4. Careers Page
+Why Work With Us?
+
+Section Heading:
+Why Work With Us?
+
+Content (use as-is, slightly polished):
+At Healweal, you don’t just build a career—you make a difference. We’re a dynamic, forward-thinking team passionate about transforming people’s health and wealth with fresh ideas and smart technology. Here, your voice matters, your growth is supported, and your work helps improve lives every single day. If you’re driven by purpose and innovation, Healweal is the place for you.
+
+Life at Healweal
+
+Section Heading:
+Life at Healweal
+
+Short Placeholder Text (since PDF just says photos/testimonials):
+Life at Healweal is collaborative, inclusive and growth-oriented. Our culture encourages learning, experimentation and ownership, supported by a team that believes in mutual respect and shared success.
+
+(You can replace this line later with real testimonials.)
+
+Job Openings
+
+Section Heading:
+Current Opportunities
+
+Short Text:
+Explore roles across our group companies and brands. We offer exciting opportunities at:
+
+Hapdax
+
+Kepwe
+
+HAt
+
+Other Healweal Corp functions
+
+[Add job listing cards / ATS integration here.]
+
+Internship / Graduate Programs
+
+Section Heading:
+Internship & Graduate Programs
+
+Short Text:
+We actively invest in young talent through structured internship and graduate programs. If you are a student or recent graduate eager to learn, build and grow with us, Healweal Corp offers mentoring, real-world projects and a platform to kickstart your career.
+
+5. News & Media Page
+
+Page Heading:
+News & Media
+
+Intro Line:
+Stay updated with the latest news, announcements and stories from Healweal Corp and our brands.
+
+Sections:
+
+Press Releases
+Official announcements and corporate updates from Healweal Corp.
+
+Media Coverage
+Articles, interviews and features about Healweal Corp and our subsidiaries in the media.
+
+Blog
+Insights, ideas and thought leadership from our teams across health, wealth and technology.
+
+(You’ll populate these with dynamic posts later.)
+
+6. Contact Us Page
+
+Page Heading:
+Contact Us
+
+Intro Line:
+We’d love to hear from you. Reach out to us for business enquiries, partnerships, careers or media-related questions.
+
+Corporate Office
+
+Sub-heading:
+Corporate Office
+
+Office No. 703, Seventh Floor, Samrat Center,
+Magarpatta, Hadapsar, Pune – 411013
+
+Registered Office
+
+Sub-heading:
+Registered Office
+
+403, Fourth Floor, Span Residency,
+Magarpatta, Hadapsar, Pune – 411013
+
+General Enquiry Form
+
+Short Text:
+For any general enquiries, please fill out the form below and our team will get back to you as soon as possible.
+
+(Use fields like Name, Email, Phone, Message.)
+
+Subsidiary Contact Links
+
+Short Text:
+For specific queries related to our brands, please reach out through their respective contact channels or websites.
+
+(You can add buttons/links for Hapdax, Kepwe, HAt contact pages.)
+
+Investor & Media Contact
+
+Email:
+contact@healwealcorp.com
+
+Short line you can add:
+For investor relations and media enquiries, please write to us at the email above.
+
+7. Footer (Global)
+
+Footer jo har page par rahega:
+
+Quick Links:
+
+About
+
+Brands
+
+Careers
+
+Contact
+
+Social Media:
+
+LinkedIn – https://www.linkedin.com/company/healwealin/
+
+Instagram – https://www.instagram.com/healwealin/
+
+X (Twitter) – https://x.com/Healwealin
+
+YouTube – https://www.youtube.com/@Healwealin
+
+Legal Links:
+
+Privacy Policy
+
+Terms of Use
+
+Disclaimer
