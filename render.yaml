@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: healweal-app
+    runtime: node
+    plan: free
+    buildCommand: NODE_ENV=development npm install && npm run build && npx tsx server/render-migrate.ts
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_INITIAL_PASSWORD
+        generateValue: true
+    healthCheckPath: /api/content
