@@ -40,6 +40,28 @@ const teamImageUrls: Record<string, string> = {
   "/attached_assets/WhatsApp Image 2025-11-22 at 9.02.43 PM-removebg-preview (1)_1764187012140.jpg": vivekKumarImg,
 };
 
+const fallbackTeamImages: Record<string, string> = {
+  "Harshad Chavandke": harshadImg,
+  "Deepak Patil": deepakImg,
+  "Manjunath K": manjunathImg,
+  "Nikita Chavandke": nikitaImg,
+  "Shlok Ranjan": shlokCTOImg,
+  "Komal Chavandke": komalImg,
+  "Rohan Samsuddin": rohanSImg,
+  "Vivek Sharma": vivekSharmaImg,
+  "Rohan Mhetre": rohanMImg,
+  "Sodan Chouhan": sodanImg,
+  "Vivek Kumar": vivekKumarImg,
+};
+
+const resolveTeamImage = (imageUrl: string | null, name: string, role: string) => {
+  const fallbackImage = name.trim() === "Shlok Ranjan" && role === "Technical Lead"
+    ? shlokTechLeadImg
+    : fallbackTeamImages[name.trim()];
+
+  return imageUrl ? teamImageUrls[imageUrl] ?? fallbackImage ?? imageUrl : fallbackImage ?? null;
+};
+
 // Exact Values per requirements
 const values = [
   { number: "01", name: "Build Better", desc: "We constantly look for a better way." },
@@ -302,14 +324,14 @@ export const AboutPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {displayTeam.map((member, i) => {
               const imgUrl = "imageUrl" in member
-                ? member.imageUrl ? teamImageUrls[member.imageUrl] ?? member.imageUrl : null
+                ? resolveTeamImage(member.imageUrl, member.name, member.role)
                 : member.image;
 
               return (
                 <div key={i} title={"description" in member && typeof member.description === "string" ? member.description : undefined} className="bg-white rounded-2xl border border-black/[0.08] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col">
                   <div className="w-full aspect-[4/5] bg-[#F4F4F5] overflow-hidden flex items-center justify-center relative">
                     {imgUrl ? (
-                      <img src={imgUrl} alt={member.name} className="w-full h-full object-contain object-center" />
+                      <img src={imgUrl} alt={member.name} className="w-full h-full object-cover object-center" />
                     ) : (
                       <User className="w-16 h-16 text-[#A1A1AA]" />
                     )}
