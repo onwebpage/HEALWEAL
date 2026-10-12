@@ -19,6 +19,26 @@ import komalImg from "@assets/WhatsApp Image 2025-11-22 at 9.02.44 PM (1)-remove
 import rohanSImg from "@assets/1752909900110-removebg-preview (1)_1764187128689.jpg";
 import shlokCTOImg from "@assets/WhatsApp Image 2025-11-26 at 6.57.59 PM-removebg-preview (1)_1764186990093.jpg";
 import vivekSharmaImg from "@assets/Mr.-Vivek-Sharma-On1y-png (1)_1764187218752.webp";
+import shlokTechLeadImg from "@assets/1755068044771 (1)_1764187200997.jpg";
+import rohanMImg from "@assets/1741298883781-removebg-preview (1)_1764187185205.jpg";
+import sodanImg from "@assets/WhatsApp-Image-2025-09-20-at-9.25.31-PM-1-225x300-removebg-preview (1)_1764187162584.jpg";
+import vivekKumarImg from "@assets/WhatsApp Image 2025-11-22 at 9.02.43 PM-removebg-preview (1)_1764187012140.jpg";
+import hamdIlahiImg from "../../../Cards Img/my_photo.jpg";
+
+const teamImageUrls: Record<string, string> = {
+  "/attached_assets/WhatsApp Image 2025-11-26 at 6.56.41 PM (1)_1764187230049.jpeg": harshadImg,
+  "/attached_assets/WhatsApp Image 2025-11-26 at 6.54.20 PM-removebg-preview (1)_1764187070120.jpg": deepakImg,
+  "/attached_assets/1517368095452-removebg-preview (1)_1764187102331.jpg": manjunathImg,
+  "/attached_assets/WhatsApp Image 2025-11-22 at 9.02.44 PM (2)-removebg-preview (1)_1764187056040.jpg": nikitaImg,
+  "/attached_assets/WhatsApp Image 2025-11-26 at 6.57.59 PM-removebg-preview (1)_1764186990093.jpg": shlokCTOImg,
+  "/attached_assets/WhatsApp Image 2025-11-22 at 9.02.44 PM (1)-removebg-preview (1)_1764187086444.jpg": komalImg,
+  "/attached_assets/1752909900110-removebg-preview (1)_1764187128689.jpg": rohanSImg,
+  "/attached_assets/Mr.-Vivek-Sharma-On1y-png (1)_1764187218752.webp": vivekSharmaImg,
+  "/attached_assets/1755068044771 (1)_1764187200997.jpg": shlokTechLeadImg,
+  "/attached_assets/1741298883781-removebg-preview (1)_1764187185205.jpg": rohanMImg,
+  "/attached_assets/WhatsApp-Image-2025-09-20-at-9.25.31-PM-1-225x300-removebg-preview (1)_1764187162584.jpg": sodanImg,
+  "/attached_assets/WhatsApp Image 2025-11-22 at 9.02.43 PM-removebg-preview (1)_1764187012140.jpg": vivekKumarImg,
+};
 
 // Exact Values per requirements
 const values = [
@@ -85,6 +105,13 @@ const advisoryBoard = [
   { name: "Nandkumar Chavandke", role: "Advisory Board Member", image: null },
 ];
 
+const hamdIlahi = {
+  name: "Hamd Ilahi",
+  role: "Chief Technology Officer (CTO)",
+  image: hamdIlahiImg,
+  description: "Leads technology strategy, software architecture, product engineering, and digital innovation, building scalable, secure, and high-performance technology solutions aligned with HealWeal's vision.",
+};
+
 export const AboutPage = () => {
   const { data: teamMembers } = useQuery<TeamMember[]>({
     queryKey: ["/api/team"],
@@ -96,7 +123,7 @@ export const AboutPage = () => {
   });
 
   const leadershipFromApi = teamMembers?.filter((m) => m.category === "leadership" || m.category === "management").sort((a, b) => a.displayOrder - b.displayOrder) || [];
-  const displayTeam = leadershipFromApi.length > 0 ? leadershipFromApi : leadershipTeam;
+  const displayTeam = [...(leadershipFromApi.length > 0 ? leadershipFromApi : leadershipTeam), hamdIlahi];
 
   return (
     <div className="bg-white w-full flex flex-col min-h-screen text-black overflow-x-hidden selection:bg-black selection:text-white">
@@ -274,13 +301,15 @@ export const AboutPage = () => {
           {/* Leadership Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {displayTeam.map((member, i) => {
-              const imgUrl = "imageUrl" in member ? member.imageUrl : member.image;
+              const imgUrl = "imageUrl" in member
+                ? member.imageUrl ? teamImageUrls[member.imageUrl] ?? member.imageUrl : null
+                : member.image;
 
               return (
-                <div key={i} className="bg-white rounded-2xl border border-black/[0.08] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col">
+                <div key={i} title={"description" in member && typeof member.description === "string" ? member.description : undefined} className="bg-white rounded-2xl border border-black/[0.08] overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col">
                   <div className="w-full aspect-[4/5] bg-[#F4F4F5] overflow-hidden flex items-center justify-center relative">
                     {imgUrl ? (
-                      <img src={imgUrl} alt={member.name} className="w-full h-full object-cover object-top" />
+                      <img src={imgUrl} alt={member.name} className="w-full h-full object-contain object-center" />
                     ) : (
                       <User className="w-16 h-16 text-[#A1A1AA]" />
                     )}
@@ -288,6 +317,9 @@ export const AboutPage = () => {
                   <div className="p-5 flex flex-col">
                     <h3 className="font-bold text-base text-black tracking-tight">{member.name}</h3>
                     <p className="text-xs font-semibold text-[#71717A] mt-1">{member.role}</p>
+                    {"description" in member && typeof member.description === "string" && (
+                      <p className="sr-only">{member.description}</p>
+                    )}
                   </div>
                 </div>
               );
